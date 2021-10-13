@@ -1,5 +1,7 @@
 let a = document.querySelector(".fontFamily");
 let b = document.querySelector("p");
+a.style.cssText = "margin-right:1em";
+
 b.style.cssText = "border:solid black 2px;padding:1em; width:50%";
 a.addEventListener("change", changeFamily);
 function changeFamily() {
@@ -14,6 +16,7 @@ function changeFamily() {
 }
 let c = document.querySelector(".fontSize");
 c.addEventListener("change", changeSize);
+c.style.cssText = "margin-right:1em";
 function changeSize() {
   let selectMe = c.value;
   if (selectMe === "size1") {
